@@ -10,6 +10,7 @@ the characters we get. If the bool value is already true,
 that means there's a duplicate character.*/
 bool isUnique(string s)
 {
+    //there are 128 unqie ASCII characters
     if (s.length() > 128)
         return false;
 
