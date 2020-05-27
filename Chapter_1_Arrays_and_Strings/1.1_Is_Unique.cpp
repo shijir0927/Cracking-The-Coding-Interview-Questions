@@ -5,7 +5,7 @@ charachters. What if you can't use additional data structure?*/
 #include <vector>
 using namespace std;
 /*Solution:
-Creating a vector of booleans and setting true for 
+Creating a vector of booleans and setting the value true for 
 the characters we get. If the bool value is already true,
 that means there's a duplicate character.*/
 bool isUnique(string s)
