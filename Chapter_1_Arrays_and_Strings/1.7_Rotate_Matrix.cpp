@@ -8,7 +8,7 @@ Since it's NxN we can find the transpose of the matrix
 and flip the collumns.
 */
 
-void helper_transpose(int **matrix, int N)
+void transpose(int **matrix, int N)
 {
     for (int i = 0; i < N; ++i)
     {
@@ -22,7 +22,7 @@ void helper_transpose(int **matrix, int N)
     }
 }
 
-void helper_reverse(int *row, int N)
+void reverse(int *row, int N)
 {
     for (int i = 0; i < N / 2; ++i)
     {
@@ -33,11 +33,11 @@ void helper_reverse(int *row, int N)
 void rotate(int **matrix, int N)
 {
     //transpose matrix
-    helper_transpose(matrix, N);
+    transpose(matrix, N);
     // reverse each row
     for (int i = 0; i < N; ++i)
     {
-        helper_reverse(matrix[i], N);
+        reverse(matrix[i], N);
     }
 }
 
