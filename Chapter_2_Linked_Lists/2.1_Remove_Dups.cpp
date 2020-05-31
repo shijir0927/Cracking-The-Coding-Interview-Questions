@@ -67,7 +67,7 @@ void removeDuplicates(Node *head)
 int main()
 {
 
-    std::cout << "Method 2 : \n";
+
     Node *head1 = nullptr;
     for (int i = 0; i < 10; ++i)
     {
